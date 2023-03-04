@@ -7,10 +7,10 @@ const imageUrl = '/spaceship.png'
 ---
 
 <Layout title="Welcome to Star Wars">
-	<main class="container mx-auto mt-24 md:mt-0">
+	<main class="container mx-auto mt-24 md:mt-0 px-8 md:px-0">
 		<div class="flex flex-col md:flex-row items-center gap-8 h-screen" id="why_us">
 			<section class="basis-2/5 flex flex-col gap-4">
-				<h1 class="font-bold text-6xl"> Enjoy with 
+				<h1 class="font-bold text-5xl md:text-6xl"> Enjoy with 
 					<span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-700 from-sky-700">Star Wars</span>
 				</h1>
 				<p>
@@ -24,7 +24,7 @@ const imageUrl = '/spaceship.png'
 		</div>
 		<article id="features">
 			<h2 class="text-center text-5xl font-bold">Features</h2>
-			<ul class="mt-8 grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
+			<ul class="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
 				<Card title="Range Mode" body="When player achive 15 score he gets range mode. Range Mode increase count of weapons">
 					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
 						<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
@@ -54,9 +54,9 @@ const imageUrl = '/spaceship.png'
 		</article>
 		<article class="mt-12">
 			<h2 class="text-center text-5xl font-bold">Contribute on GitHub</h2>
-			<section class="mt-8 flex items-center justify-center gap-8">
-				<Image src='/github-qr.png' width={250} height={250} alt="github qr code" class='rounded-md border-4 border-emerald-500' />
-				<h4 class="text-lg text-gray-300 basis-1/2">By contributing to open-source projects on GitHub, you'll have the opportunity to work on real-world projects, demonstrate your coding skills, and build your developer network. So don't hesitate, find a project that interests you and start contributing today!</h4>
+			<section class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+				<Image src='/github-qr.png' width={250} height={250} alt="github qr code" class='mx-auto rounded-md border-4 border-emerald-500' />
+				<h4 class="text-base md:text-lg text-gray-300">By contributing to open-source projects on GitHub, you'll have the opportunity to work on real-world projects, demonstrate your coding skills, and build your developer network. So don't hesitate, find a project that interests you and start contributing today!</h4>
 			</section>
 		</article>
 	</main>
