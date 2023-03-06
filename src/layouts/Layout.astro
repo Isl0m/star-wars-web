@@ -7,6 +7,7 @@ export interface Props {
 }
 
 const { title } = Astro.props;
+const description = "Install our game to any <b>platform</b> enjoy, learn and impove your math and geometry skills." 
 ---
 
 <!DOCTYPE html>
@@ -14,8 +15,19 @@ const { title } = Astro.props;
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
 		<meta name="generator" content={Astro.generator} />
+
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://star-wars-web.vercel.app/">
+		<meta property="og:title" content={title}>
+		<meta property="og:description" content={description}>
+		<meta property="og:image" content="/logo.png">
+
+
+		<meta name="title" content={title}>
+		<meta name="description" content={description} />
+
 		<title>{title}</title>
 	</head>
 	<body>
